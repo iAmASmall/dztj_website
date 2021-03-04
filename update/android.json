@@ -1,0 +1,8 @@
+{
+  "version": "1.0.0",
+  "build_number": 1,
+  "content": "1. 优化api接口。",
+  "website": "https://dztj.app",
+  "downloadUrl": "https://dztj.vercel.app",
+  "is_force": false
+}

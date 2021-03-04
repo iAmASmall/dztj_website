@@ -1,13 +1,77 @@
 <!doctype html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>店长推荐</title>
+    <title>店长推荐App</title>
+    <style>
+        html, body {
+            font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            color: white;
+            background-color: #1F0040;
+            font-size: 16px;
+            overflow: hidden;
+        }
+
+        #app {
+            height: 100%;
+            text-align: center;
+            position: relative;
+        }
+
+        #pop {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .button {
+            display: inline-block;
+            line-height: 2.5rem;
+            height: 2.5rem;
+            text-align: center;
+            padding: 0 1.3rem;
+            border-radius: 0.1rem;
+            background-image: linear-gradient(45deg, #b13cff 0, #fd9d52 51%, #b13cff 100%);
+        }
+    </style>
 </head>
 <body>
-    <h3>hello</h3>
+<div id="app">
+    <div id="pop">
+        <div>店长推荐App</div>
+        <div>永久免费</div>
+    </div>
+</div>
+<script>
+    ;(function (w) {
+        var button = document.createElement('a');
+        button.style.marginTop = '2rem';
+        button.className = 'button';
+        button.href = '/package/app-release.apk';
+        button.innerText = '立即下载(Android)';
+        w.fetch('/update/android.json').then(function (res) {
+            return res.json();
+        }).then(function (data) {
+            button.download = '店长推荐App_V' + data.version + '+' + data.build_number + '.apk';
+        }).catch(function () {
+            button.download = '店长推荐App.apk';
+        }).finally(function () {
+            document.querySelector('#pop').appendChild(button);
+        });
+    })(window);
+</script>
 </body>
 </html>
