@@ -10,7 +10,16 @@
     <meta name="Keywords" content="店长推荐,店长推荐App,激情视频,91视频,黄瓜视频,自拍视频,情色视频,成人视频,第一会所,一本道,东京热,米tao,红杏,蜜汁"/>
 
     <title>店长推荐App-永久免费的视频App</title>
-    <style>html, body {
+    <style>
+
+        /*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+html, body {
         font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
         margin: 0;
         padding: 0;
@@ -33,7 +42,9 @@
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%)
+        -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%)
     }
     .bold {
         font-weight: bold;
@@ -51,6 +62,7 @@
         text-align: center;
         padding: 0 1.3rem;
         border-radius: .1rem;
+        background-image: -o-linear-gradient(45deg, #b13cff 0, #fd9d52 51%, #b13cff 100%);
         background-image: linear-gradient(45deg, #b13cff 0, #fd9d52 51%, #b13cff 100%)
     }
 
@@ -64,6 +76,8 @@
         left: 0;
         right: 0;
         bottom: 0;
+        height: 100%;
+        width: 100%;
     }
     .slide-mask {
         background-color: rgba(0, 0, 0, .5);
@@ -75,34 +89,54 @@
     }
     .frame1 {
         background-image: url('/static/img/bg1.jpg');
-        animation: 20s infinite frame1;
+        -webkit-animation: 20s infinite frame1;
+                animation: 20s infinite frame1;
     }
     
     .frame2 {
         background-image: url('/static/img/bg2.jpg');
-        animation: 20s infinite frame2;
+        -webkit-animation: 20s infinite frame2;
+                animation: 20s infinite frame2;
     }
     
     .frame3 {
         background-image: url('/static/img/bg3.jpg');
-        animation: 20s infinite frame3;
+        -webkit-animation: 20s infinite frame3;
+                animation: 20s infinite frame3;
     }
   
+    @-webkit-keyframes frame1{ 
+        0%,100% { opacity: 1; -webkit-transform: scale(1.0); transform: scale(1.0); }
+        33% { opacity: 0; -webkit-transform: scale(1.0); transform: scale(1.0); }
+        66% { opacity: 0; -webkit-transform: scale(1.2); transform: scale(1.2);}
+      }
+  
     @keyframes frame1{ 
-        0%,100% { opacity: 1; transform: scale(1.0); }
-        33% { opacity: 0; transform: scale(1.0); }
-        66% { opacity: 0; transform: scale(1.2);}
+        0%,100% { opacity: 1; -webkit-transform: scale(1.0); transform: scale(1.0); }
+        33% { opacity: 0; -webkit-transform: scale(1.0); transform: scale(1.0); }
+        66% { opacity: 0; -webkit-transform: scale(1.2); transform: scale(1.2);}
+      }
+      @-webkit-keyframes frame2{ 
+        0%,100% { opacity: 0; -webkit-transform: scale(1.2); transform: scale(1.2); }
+        33% { opacity: 1; -webkit-transform: scale(1.0); transform: scale(1.0); }
+        66% { opacity: 0; -webkit-transform: scale(1.0); transform: scale(1.0) }
       }
       @keyframes frame2{ 
-        0%,100% { opacity: 0; transform: scale(1.2); }
-        33% { opacity: 1; transform: scale(1.0); }
-        66% { opacity: 0; transform: scale(1.0) }
+        0%,100% { opacity: 0; -webkit-transform: scale(1.2); transform: scale(1.2); }
+        33% { opacity: 1; -webkit-transform: scale(1.0); transform: scale(1.0); }
+        66% { opacity: 0; -webkit-transform: scale(1.0); transform: scale(1.0) }
+      }
+      @-webkit-keyframes frame3{ 
+        0%,100% { opacity: 0; -webkit-transform: scale(1.0); transform: scale(1.0) }
+        33% { opacity: 0; -webkit-transform: scale(1.2); transform: scale(1.2) }
+        66% { opacity: 1; -webkit-transform: scale(1.0); transform: scale(1.0); }
       }
       @keyframes frame3{ 
-        0%,100% { opacity: 0; transform: scale(1.0) }
-        33% { opacity: 0; transform: scale(1.2) }
-        66% { opacity: 1; transform: scale(1.0); }
+        0%,100% { opacity: 0; -webkit-transform: scale(1.0); transform: scale(1.0) }
+        33% { opacity: 0; -webkit-transform: scale(1.2); transform: scale(1.2) }
+        66% { opacity: 1; -webkit-transform: scale(1.0); transform: scale(1.0); }
       }
+      
     </style>
 </head>
 <body>
