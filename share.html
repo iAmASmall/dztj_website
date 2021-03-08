@@ -15,7 +15,7 @@
 </head>
 <body>
     <div id="app">
-        <video id="player" controls></video>
+        <video id="player" controls playsinline></video>
         <a style="margin-top: 1rem;" class="button" href="/">更多精彩请点击下载App</a>
     </div>
     <script src="//cdn.bootcdn.net/ajax/libs/hls.js/1.0.0-beta.3.0.canary.6685/hls.min.js"></script>
@@ -29,10 +29,13 @@
                     var hls = new Hls();
                     hls.loadSource(s);
                     hls.attachMedia(p);
-                    p.play();
+                } else {
+                    p.src = s;
                 }
             } catch (e) {
-
+                alert(e.message);
+            } finally {
+                p.play();
             }
         })(window);
     </script>
