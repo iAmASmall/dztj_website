@@ -6,7 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description"
-    content="店长推荐可免费在线观看包括国产淫乱嫩模,巨乳少妇,打飞机三级片,写真等成人av午夜伦理超清无码电影短视频"/>
+          content="店长推荐可免费在线观看包括国产淫乱嫩模,巨乳少妇,打飞机三级片,写真等成人av午夜伦理超清无码电影短视频"/>
     <meta name="Keywords" content="店长推荐,店长推荐App,激情视频,91视频,黄瓜视频,自拍视频,情色视频,成人视频,第一会所,一本道,东京热,米tao,红杏,蜜汁"/>
 
     <title>在线免费观看高清无码,韩国日本av美女,同志野外写真,伦理电影短视频_尽在店长推荐</title>
@@ -15,22 +15,30 @@
 <body>
 <div id="app">
     <div class="slide-wrapper">
-       <div class="slide-item frame1"></div>
-       <div class="slide-item frame2"></div>
-       <div class="slide-item frame3"></div>
+        <div class="slide-item frame1"></div>
+        <div class="slide-item frame2"></div>
+        <div class="slide-item frame3"></div>
     </div>
     <div class="slide-mask"></div>
     <div id="pop">
         <div class="bold">店长推荐App</div>
         <div class="sub-title">-百万资源 想看就看-</div>
         <div class="sub-title">-极致体验 永久免费-</div>
+        <div class="sub-title align-items">
+            <img src="/static/img/checked.png" alt=""><span>无毒</span>
+            <img src="/static/img/checked.png" alt=""><span>无广告</span>
+        </div>
+        <div class="sub-title align-items">
+            <img src="/static/img/checked.png" alt=""><span>无插件</span>
+            <img src="/static/img/checked.png" alt=""><span>无隐私收集</span>
+        </div>
     </div>
 </div>
 <script>
-    !function (a) {
+    !function () {
         var p = document.querySelector("#pop");
         var b = document.createElement("a");
-        b.style.marginTop = "2rem";
+        b.style.marginTop = "1rem";
         b.className = "button";
         b.href = "/package/app-release.apk";
         ajax(function (e) {
@@ -43,12 +51,13 @@
                 d.innerText = c;
                 p.appendChild(b);
                 p.appendChild(d);
-                b.click();
+                // b.click();
 
             }, function () {
                 b.download = "店长推荐App.apk";
                 b.innerText = "立即下载(Android)";
                 p.appendChild(b);
+                b.click();
             }
         )
 
