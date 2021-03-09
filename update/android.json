@@ -1,6 +1,6 @@
 {
   "version": "0.0.1",
-  "build_number": 2,
+  "build_number": 1,
   "content": "1. 添加隐私锁\n2.修复若干Bug",
   "website": "https://dztj.app",
   "downloadUrl": "https://dztj.vercel.app",
