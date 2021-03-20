@@ -1,7 +1,7 @@
 {
   "version": "0.0.1",
-  "build_number": 2,
-  "content": "1. 更新播放器\n2.修复若干Bug",
+  "build_number": 3,
+  "content": "1. 修复若干Bug",
   "website": "https://dztj.app",
   "downloadUrl": "https://shandianpan.com/f/2wGU",
   "is_force": true
