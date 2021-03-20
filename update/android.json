@@ -1,8 +1,8 @@
 {
   "version": "0.0.1",
-  "build_number": 1,
-  "content": "1. 添加隐私锁\n2.修复若干Bug",
+  "build_number": 2,
+  "content": "1. 更新播放器\n2.修复若干Bug",
   "website": "https://dztj.app",
-  "downloadUrl": "https://dztj.vercel.app",
-  "is_force": false
+  "downloadUrl": "https://shandianpan.com/f/2wGU",
+  "is_force": true
 }
