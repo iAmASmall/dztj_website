@@ -40,24 +40,19 @@
         var b = document.createElement("a");
         b.style.marginTop = "1rem";
         b.className = "button";
-        b.href = "/package/app-release.apk";
+        b.innerText = "点击下载 (Android)";
+        b.href = "https://shandianpan.com/f/2wGU";
         ajax(function (e) {
                 var a = JSON.parse(e.target.response);
                 var c = "v" + a.version + "+" + a.build_number;
-                b.download = "店长推荐App_" + c + ".apk";
-                b.innerText = "立即下载 (Android)";
                 var d = document.createElement("div");
                 d.className = "version-text";
                 d.innerText = c;
                 p.appendChild(b);
                 p.appendChild(d);
-                b.click();
 
             }, function () {
-                b.download = "店长推荐App.apk";
-                b.innerText = "立即下载(Android)";
                 p.appendChild(b);
-                b.click();
             }
         )
 
