@@ -1,7 +1,7 @@
 {
   "version": "0.0.1",
-  "build_number": 7,
-  "content": "1. 添加下载功能\n2. 重构搜索页面",
+  "build_number": 8,
+  "content": "1. 添加超清播放源\n2. 修复若干BUG",
   "website": "https://dztj.app",
   "downloadUrl": "https://shandianpan.com/f/2wGU",
   "is_force": true
