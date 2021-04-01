@@ -1,8 +1,8 @@
 {
   "version": "0.0.1",
-  "build_number": 9,
+  "build_number": 10,
   "content": "1. 修复若干BUG",
-  "website": "https://dztj.app",
-  "downloadUrl": "https://shandianpan.com/f/2wGU",
+  "website": "https://dztj.vercel.app",
+  "downloadUrl": "https://dztj.vercel.app/package/app-release.apk",
   "is_force": true
 }
