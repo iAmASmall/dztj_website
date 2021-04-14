@@ -36,33 +36,34 @@
 </div>
 <script>
     !function () {
-        var p = document.querySelector("#pop");
-        var b = document.createElement("a");
-        b.style.marginTop = "1rem";
-        b.className = "button";
-        b.innerText = "点击下载 (Android)";
-        b.href = "/package/app-release.apk";
-        ajax(function (e) {
-                var a = JSON.parse(e.target.response);
-                var c = "v" + a.version + "+" + a.build_number;
-                var d = document.createElement("div");
-                d.className = "version-text";
-                d.innerText = c;
-                p.appendChild(b);
-                p.appendChild(d);
+        window.location.href = "http://dztj666.tech";
+//         var p = document.querySelector("#pop");
+//         var b = document.createElement("a");
+//         b.style.marginTop = "1rem";
+//         b.className = "button";
+//         b.innerText = "点击下载 (Android)";
+//         b.href = "/package/app-release.apk";
+//         ajax(function (e) {
+//                 var a = JSON.parse(e.target.response);
+//                 var c = "v" + a.version + "+" + a.build_number;
+//                 var d = document.createElement("div");
+//                 d.className = "version-text";
+//                 d.innerText = c;
+//                 p.appendChild(b);
+//                 p.appendChild(d);
 
-            }, function () {
-                p.appendChild(b);
-            }
-        )
+//             }, function () {
+//                 p.appendChild(b);
+//             }
+//         )
 
-        function ajax(sCb, eCb) {
-            var xhr = new XMLHttpRequest();
-            xhr.onload = sCb;
-            xhr.onerror = eCb;
-            xhr.open("get", "/update/android.json")
-            xhr.send();
-        }
+//         function ajax(sCb, eCb) {
+//             var xhr = new XMLHttpRequest();
+//             xhr.onload = sCb;
+//             xhr.onerror = eCb;
+//             xhr.open("get", "/update/android.json")
+//             xhr.send();
+//         }
     }(window);
 
 </script>
