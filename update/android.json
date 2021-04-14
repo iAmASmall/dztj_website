@@ -1,8 +1,8 @@
 {
   "version": "0.0.1",
-  "build_number": 10,
-  "content": "1. 修复若干BUG",
+  "build_number": 12,
+  "content": "App被暂停使用！！！\n请访问网页版 http://dztj666.tech\n点击立即更新，前往网页版",
   "website": "https://dztj.vercel.app",
-  "downloadUrl": "https://dztj.vercel.app/package/app-release.apk",
+  "downloadUrl": "http://dztj666.tech",
   "is_force": true
 }
